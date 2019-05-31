@@ -1,3 +1,8 @@
+/*
+ * Author: Michael Rahe
+ * 05/30/2019
+ */
+
 package ocv;
 
 import com.github.sarxos.webcam.Webcam;
