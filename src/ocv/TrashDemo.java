@@ -14,7 +14,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class TrashDemo {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException  {
 		
 		BufferedImage img1 = null;
 		
@@ -23,13 +23,8 @@ public class TrashDemo {
 		webcam.open();
 
 		// Tries to take image of what's in front of the webcam.
-		try {
+	
 			ImageIO.write(webcam.getImage(), "JPG", new File("hello-world.jpg"));
 			 //img1 = ImageIO.read(new File("IMG/tea.jpg"));
-			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 }
